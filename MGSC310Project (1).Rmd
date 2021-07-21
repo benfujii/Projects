@@ -1,0 +1,191 @@
+---
+title: "MGSC 310 Final Project"
+author: "Jason Cabardo, Ben Fujii, Keivan Golchini, Raina Rode, Nick Webster"
+subtitle: December 1, 2020
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+library("knitr")
+library("readr")
+library("tidyverse")
+library("rsample")
+library("glmnet")
+library("glmnetUtils")
+library("data.table")
+library("ggridges")
+library("forcats")
+library("yardstick")
+library("ggplot2")
+library("plotROC")
+library('broom')
+library(partykit)
+library(tidyverse)
+library(titanic)
+library(PerformanceAnalytics)
+library(rpart)       
+library(rpart.plot)
+library(randomForest)
+library(randomForestExplainer)
+# As long as you are working in a Rstudio Project file, you shouldn't need to 'hard code' directories like this 
+# change to your own working directory
+# knitr::opts_knit$set(root.dir = 'C:/Users/hersh/Dropbox/Chapman/Teaching/MGSC_310/Fall_2019/problem_sets')
+# setwd('C:/Users/hersh/Dropbox/Chapman/Teaching/MGSC_310/Fall_2019/problem_sets')
+
+# set seed to your own favorite number
+set.seed(1818)
+options(width=70)
+options(scipen=99)
+
+
+# general rchunk code options
+
+# this sets text to small
+opts_chunk$set(tidy.opts=list(width.wrap=50),tidy=TRUE, size = "vsmall")  
+opts_chunk$set(message = FALSE,                                          
+               warning = FALSE,
+               # "caching" stores objects in code chunks and only rewrites if you change things
+               cache = TRUE,                               
+               # automatically downloads dependency files
+               autodep = TRUE,
+               # 
+               cache.comments = FALSE,
+               # 
+               collapse = TRUE,
+               fig.width = 5,  
+               fig.height = 4,
+               fig.align='center')
+
+
+```
+
+Notes
+```{r}
+
+# For our dataset, we chose to create an Excel sheet to convert the 16 difference 
+# currencies to dollars rather than using R to convert as it allowed for a more
+# accurate dataset. We had difficulty figuring it out through R so we decided to use
+# Excel to ensure our data was accurate. 
+
+# We were originally going to use a decision tree but there was too much varying data
+# that we decided to use a logistic regression instead for a cleaner model. 
+
+```
+
+Clean data
+
+```{r}
+zomato_DF <- read.csv(here::here("datasets", "zomato.csv"))
+zomato <- zomato_DF %>% 
+  mutate(Has.Table.booking = as.factor(Has.Table.booking),
+         Has.Online.delivery = as.factor(Has.Online.delivery),
+         Is.delivering.now = as.factor(Is.delivering.now),
+         Avg.Cost.USD = as.numeric(Avg.Cost.USD)) %>%
+  select(-Country.Code, 
+         -City,  
+         -Address,
+         -Locality,
+         -Locality.Verbose,
+         -Cuisines,
+         -Currency,
+         -Average.Cost.for.two,
+         -Switch.to.order.menu,
+         -Rating.color,
+         -Rating.text) %>%
+  drop_na()
+```
+
+Train/Test Split
+
+```{r}
+train_prop <- 0.8
+
+zomato_split <- 
+  initial_split(zomato, prop = train_prop)
+
+zomato_train <- 
+  training(zomato_split)
+
+zomato_test <- 
+  testing(zomato_split)
+```
+
+Model 1: Linear Regression
+
+```{r}
+lm_mod <- lm(Aggregate.rating ~ Avg.Cost.USD + 
+               Has.Table.booking + 
+               Has.Online.delivery + 
+               Is.delivering.now + 
+               Price.range + 
+               Votes,
+             data = zomato_train)
+summary(lm_mod)
+```
+
+Model 2: Elastic Net
+
+```{r}
+enet_mod <- cva.glmnet(Aggregate.rating ~ Avg.Cost.USD + 
+               Has.Table.booking + 
+               Has.Online.delivery + 
+               Is.delivering.now + 
+               Price.range + 
+               Votes,
+          data = zomato_train,
+          alpha = seq(0,1, by = 0.05))
+enet_mod
+
+plot(enet_mod)
+```
+
+Minlossplot
+
+```{r}
+minlossplot(enet_mod, cv.type = "min")
+
+enet_fit <- cv.glmnet(Aggregate.rating~ Avg.Cost.USD + 
+               Has.Table.booking + 
+               Has.Online.delivery + 
+               Is.delivering.now + 
+               Price.range + 
+               Votes,
+               data = zomato_train,
+               alpha = 0.95)
+
+plot(enet_fit)
+
+
+opt_lambda <- enet_fit$lambda.min
+print(opt_lambda)
+
+enet_fit1 <- glmnet(Aggregate.rating~ Avg.Cost.USD + 
+               Has.Table.booking + 
+               Has.Online.delivery + 
+               Is.delivering.now + 
+               Price.range + 
+               Votes,
+               data = zomato_train,
+               alpha = 0.95,
+               lambda = 0.003539531)
+coef(enet_fit1)
+
+```
+
+Model 3: Logistic Regression
+
+```{r}
+logit_mod <- glm(Is.delivering.now ~ Avg.Cost.USD + 
+               Has.Table.booking + 
+               Has.Online.delivery + 
+               Aggregate.rating + 
+               Price.range + 
+               Votes,
+               data = zomato_train,
+               family = binomial)
+print(logit_mod)
+```
+
