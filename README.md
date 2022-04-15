@@ -13,3 +13,6 @@ Data Analytics Projects by Ben Fujii
 
 # [Project 2: New York City AirBNB Analysis](https://github.com/benfujii/Projects/blob/main/NYC_AirBNB%20(1).ipynb)
 **April 2021 - May 2021**
+![image](https://user-images.githubusercontent.com/87784856/163502832-abeed95f-25fd-4130-9999-d9dfaa59025e.png)
+- Analyzed a 45,000+ row dataset with Python in order to discover how characteristics such as price, average rating, location, and the room type optimize an AirBNB listing's price and demand
+- [Link to video presentation](https://github.com/benfujii/Projects/blob/main/NYC%20Airbnb%20Presentation.mp4)
