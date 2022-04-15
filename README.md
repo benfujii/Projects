@@ -10,3 +10,6 @@ Data Analytics Projects by Ben Fujii
 - Ran linear regression models against these key-word searches in order to understand the impact they were having on customer satisfaction
 - Ran additional linear regression models to find the airlines' overall impact on a customer's review being positive
 - [Link to originial Excel file](https://github.com/benfujii/Projects/blob/main/Twitter%20Airline%20Sentiment%20Analysis%20-%20Excel%20File.xlsx)
+
+# [Project 2: New York City AirBNB Analysis](https://github.com/benfujii/Projects/blob/main/NYC_AirBNB%20(1).ipynb)
+**April 2021 - May 2021**
