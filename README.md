@@ -16,3 +16,8 @@ Data Analytics Projects by Ben Fujii
 ![image](https://user-images.githubusercontent.com/87784856/163502832-abeed95f-25fd-4130-9999-d9dfaa59025e.png)
 - Analyzed a 45,000+ row dataset with Python in order to discover how characteristics such as price, average rating, location, and the room type optimize an AirBNB listing's price and demand
 - [Link to video presentation](https://github.com/benfujii/Projects/blob/main/NYC%20Airbnb%20Presentation.mp4)
+
+# [Project 3: Retail Startup Location Analysis](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis%20Excel%20File.xlsx) 
+**November 2021**
+- xyz
+- [Link to Powerpoint presentation](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis-Presentation.pptx)
