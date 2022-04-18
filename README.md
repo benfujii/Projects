@@ -13,21 +13,25 @@ Data Analytics Projects by Ben Fujii
 - [Link to originial Excel file](https://github.com/benfujii/Projects/blob/main/Twitter%20Airline%20Sentiment%20Analysis%20-%20Excel%20File.xlsx)
 
 # [Project 2: New York City AirBNB Analysis](https://github.com/benfujii/Projects/blob/main/NYC_AirBNB%20(1).ipynb)
+## Python
 **April 2021 - May 2021**
 ![image](https://user-images.githubusercontent.com/87784856/163502832-abeed95f-25fd-4130-9999-d9dfaa59025e.png)
 - Analyzed a 45,000+ row dataset with Python in order to discover how characteristics such as price, average rating, location, and the room type optimize an AirBNB listing's price and demand
 - [Link to video presentation](https://github.com/benfujii/Projects/blob/main/NYC%20Airbnb%20Presentation.mp4)
 
 # [Project 3: Retail Startup Location Analysis](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis%20Excel%20File.xlsx) 
+## Microsoft Excel
 **November 2021**
 - xyz
 - [Link to Powerpoint presentation](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis-Presentation.pptx)
 
 # [Project 4: Rosetta Stone Subscriber Analysis](https://github.com/benfujii/Projects/blob/main/Rosetta%20Stone%20Subscriber%20Optimization.pptx)
+## Python
 **November 2021 - December 2021**
 - xyz
 
 # [Project 5: Zomato Aggregate Rating Analysis](https://github.com/benfujii/Projects/blob/main/Zomato's%20Aggregate%20Rating%20Breakdown.pptx)
+## R
 **November 2020 - December 2020**
 - xyz
 - [Link to R Markdown file](https://github.com/benfujii/Projects/blob/main/ZomatoAggregateRatingProject.Rmd) 
