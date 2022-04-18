@@ -2,6 +2,7 @@
 Data Analytics Projects by Ben Fujii
 
 # [Project 1: Twitter Airline Sentiment Analysis](https://github.com/benfujii/Projects/blob/main/Twitter%20Airline%20Sentiment%20Analysis%20-%20Excel.pptx)
+## Microsoft Excel
 **September 2021 - October 2021**
 ![image](https://user-images.githubusercontent.com/87784856/163502139-0557a9c0-dbd1-42d5-937a-7d88ce63b61c.png)
 - Utilized Microsoft Excel to clean the dataset that contained over 14,000 rows
