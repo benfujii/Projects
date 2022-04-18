@@ -21,3 +21,12 @@ Data Analytics Projects by Ben Fujii
 **November 2021**
 - xyz
 - [Link to Powerpoint presentation](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis-Presentation.pptx)
+
+# [Project 4: Rosetta Stone Subscriber Analysis](https://github.com/benfujii/Projects/blob/main/Rosetta%20Stone%20Subscriber%20Optimization.pptx)
+**November 2021 - December 2021**
+- xyz
+
+# [Project 5: Zomato Aggregate Rating Analysis](https://github.com/benfujii/Projects/blob/main/Zomato's%20Aggregate%20Rating%20Breakdown.pptx)
+**November 2020 - December 2020**
+- xyz
+- [Link to R Markdown file](https://github.com/benfujii/Projects/blob/main/ZomatoAggregateRatingProject.Rmd) 
