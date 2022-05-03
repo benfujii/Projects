@@ -17,6 +17,10 @@ Data Analytics Projects by Ben Fujii
 **April 2021 - May 2021**
 ![image](https://user-images.githubusercontent.com/87784856/163502832-abeed95f-25fd-4130-9999-d9dfaa59025e.png)
 - Analyzed a 45,000+ row dataset with Python in order to discover how characteristics such as price, average rating, location, and the room type optimize an AirBNB listing's price and demand
+- Worked alongside two classmates to answer nine analysis questions regarding the dataset
+- In order to analyze the data and answer the questions, I standardized (z-scored) variables, utilized clustering algorithms including DBSCAN, created linear and logistic regression models, and also utilized Lasso regression models
+- Created multiple data visualizations per questions that clearly and effectively depicted findings
+- Described analysis process on both the jupyter notebook file and in a video presentation, which is linked below
 - [Link to video presentation](https://github.com/benfujii/Projects/blob/main/NYC%20Airbnb%20Presentation.mp4)
 
 # [Project 3: Retail Startup Location Analysis](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis%20Excel%20File.xlsx) 
