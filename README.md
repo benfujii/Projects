@@ -26,7 +26,13 @@ Data Analytics Projects by Ben Fujii
 # [Project 3: Retail Startup Location Analysis](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis%20Excel%20File.xlsx) 
 ## Microsoft Excel
 **November 2021**
-- xyz
+
+- Cleaned and analyzed 8 different datasets that totaled over 500,000 rows of data regarding general information on cities around the US
+- Utilized pivot tables and min and max functions to establish a specific target market
+- Created linear regression models to indicate what makes a location "good" for a retail startup
+- Implemented filtering, pivot tables, and linear regression in order to determine the top 10 most optimal locations for launching a retail startup based on the previous regression model's results
+- Created clear and effective data visualizations for each city to visualize the potential of each respecrive city
+- Powerpoint that summarizes findings and results as well as the processes taken linked below
 - [Link to Powerpoint presentation](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis-Presentation.pptx)
 
 # [Project 4: Rosetta Stone Subscriber Analysis](https://github.com/benfujii/Projects/blob/main/Rosetta%20Stone%20Subscriber%20Optimization.pptx)
