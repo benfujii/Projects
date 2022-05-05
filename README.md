@@ -39,6 +39,7 @@ Data Analytics Projects by Ben Fujii
 ## Python
 **November 2021 - December 2021**
 - xyz
+- [Link to written analysis](https://docs.google.com/document/d/195sASCl7uhOIG2ep63IKLI3ihqTtFKTA4Aoc-k1pP9M/edit?usp=sharing) 
 
 # [Project 5: Zomato Aggregate Rating Analysis](https://github.com/benfujii/Projects/blob/main/Zomato's%20Aggregate%20Rating%20Breakdown.pptx)
 ## R
