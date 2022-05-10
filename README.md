@@ -38,7 +38,10 @@ Data Analytics Projects by Ben Fujii
 # [Project 4: Rosetta Stone Subscriber Analysis](https://github.com/benfujii/Projects/blob/main/Rosetta%20Stone%20Subscriber%20Optimization.pptx)
 ## Python
 **November 2021 - December 2021**
-- xyz
+- Collaborated with other classmates in order to clean and analyze a 40,000+ row dataset regarding data of Rosetta Stone's subscriber base
+- Created a weighted scoring method in order to uncover the most important subscribers in terms of spending and engagement by using z-scoring, as well as various linear regression models
+- Utilized the K-Means clustering algorithm in order to display four distinct subscriber segments within the subscriber base depending on spending, engagement, and location
+- Wrote an analysis of findings and our processes in an action plan, which is linked below, as well as presented Powerpoint that summarized these findings to the class
 - [Link to written analysis](https://docs.google.com/document/d/195sASCl7uhOIG2ep63IKLI3ihqTtFKTA4Aoc-k1pP9M/edit?usp=sharing) 
 
 # [Project 5: Zomato Aggregate Rating Analysis](https://github.com/benfujii/Projects/blob/main/Zomato's%20Aggregate%20Rating%20Breakdown.pptx)
