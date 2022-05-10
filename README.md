@@ -26,7 +26,7 @@ Data Analytics Projects by Ben Fujii
 # [Project 3: Retail Startup Location Analysis](https://github.com/benfujii/Projects/blob/main/Retail%20Startup%20Location%20Analysis%20Excel%20File.xlsx) 
 ## Microsoft Excel
 **November 2021**
-
+<img width="1086" alt="Screen Shot 2022-05-05 at 11 57 04 AM" src="https://user-images.githubusercontent.com/87784856/167700782-cab1dc15-b463-47bc-8b36-4465c6d06b90.png">
 - Cleaned and analyzed 8 different datasets that totaled over 500,000 rows of data regarding general information on cities around the US
 - Utilized pivot tables and min and max functions to establish a specific target market
 - Created linear regression models to indicate what makes a location "good" for a retail startup
