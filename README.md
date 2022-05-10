@@ -50,5 +50,9 @@ Data Analytics Projects by Ben Fujii
 # [Project 5: Zomato Aggregate Rating Analysis](https://github.com/benfujii/Projects/blob/main/Zomato's%20Aggregate%20Rating%20Breakdown.pptx)
 ## R
 **November 2020 - December 2020**
-- xyz
+<img width="342" alt="Picture2" src="https://user-images.githubusercontent.com/87784856/167702686-24d61be0-5406-4944-a1a5-7a9d6e9a50b2.png">
+
+- Worked alongside four other classmates in order to analyze and clean a 10,000+ row dataset that contained data about Zomato's restaurants
+- Created an Elastic Net Regression model, starting with creating a min loss plot to find the optimal alpha and lambda, in order to find which variables are most closely correlated with the average rating of a restaruant
+- Presented findings to class using a breakdown powerpoint, which is linked above
 - [Link to R Markdown file](https://github.com/benfujii/Projects/blob/main/ZomatoAggregateRatingProject.Rmd) 
